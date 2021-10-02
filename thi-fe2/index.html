@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="public/assets.css">
+  <link rel="stylesheet" href="public/timeClock.css">
+</head>
+
+<body>
+<!-- Source game Start -->
+  <section id="body-game">
+    <audio class="my_audio" controls autoplay hidden>
+      <source src="public/audio/batdau.mp3" type="audio/mpeg">
+  </audio>
+    <!-- <div id="time-play" class="container"></div> -->
+    <div id="time-game"></div>
+    <div class="menu">
+    </div>
+    <!-- Window -->
+    <div class="window">
+      <img src="public/images/window.jpg" class="img-fluid" alt="Window">
+    </div>
+    <!-- Menu item Start-->
+    <div class="money d-hidden"><i class="fas fa-coins"></i> 0</div>
+    <div class="menu-item d-hidden">
+      <div class="item item-home" onclick="location.reload();">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="item item-shop" onclick="showBuyGas();">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="item item-music">
+        <i class="fas fa-bell"></i>
+      </div>
+    </div>
+    <!-- Buy gas-stove-->
+    <div class="buy-gas">
+      <div class="row">
+        <div class="col-12 mb-3">
+          <div class="d-flex">
+            <div class="w-25">
+              <img src="public/images/gas-2.png" class="img-fluid" alt="">
+            </div>
+            <div class="w-50 ml-2 name-gas">
+              Super gas - Cooking in 1s
+            </div>
+            <div class="w-25">
+              <a href="#" class="get-buy">300</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <div class="d-flex">
+            <div class="w-25">
+              <img src="public/images/gas-stove.png" class="img-fluid" alt="">
+            </div>
+            <div class="w-50 ml-2 name-gas">
+              Super gas - Cooking in 1s
+            </div>
+            <div class="w-25">
+              <a href="#" class="get-buy">300</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu item End-->
+    <div class="table">
+      <img src="public/images/table (2).jpg" class="img-fluid" alt="Table">
+    </div>
+
+    <!-- Gas stove -->
+    <div class="gas-stove d-hidden">
+      <img id="gas-stove" src="public/images/gas-stove.png" class="img-fluid" alt="Gas stove">
+      <div class="cook-wrong"><i class="fas fa-times"></i></div>
+      <div id="cooking">
+        <div class="btn-cook">Cooking</div>
+      </div>
+    </div>
+    <!-- Pan Start-->
+    <div class="pan d-hidden">
+      <div class="father-pan">
+        <img src="public/images/pan.png" class="img-fluid" alt="Pan">
+        <div class="child-pan" id="parent">
+        </div>
+      </div>
+    </div>
+    <!-- Pan End -->
+    <div class="meterial">
+      <div class="w-100" id="show-meterial">
+        <!-- <img src="public/images/material/ca-chua.png" class="img-fluid mr-1" alt="">           -->
+
+      </div>
+
+    </div>
+    <div id="start">Start</div>
+    <div class="time-out">3</div>
+    <!-- Food for client Start -->
+    <div class="food-client">
+      <img src="public/images/pizza.jpg" class="img-fluid" alt="Food">
+    </div>
+    <!-- Food for client End -->
+    <div class="broom d-hidden" id="broom">
+      <img src="public/images/broom.png" class="img-fluid" alt="">
+    </div>
+
+    <div class="form-win">
+      <h1>YOU WIN</h1>
+      <div id="continue" class="btn btn-main">Continue</div>
+    </div>
+    <div class="form-lose">
+      <h1>YOU LOSE</h1>
+      <div id="try-again" class="btn btn-main">Try again</div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script> 
+    <script src="public/jQuery.js"></script>
+    <script src="public/timeClock.js"></script>
+    <script src="public/scripts.js"></script>
+    
+</body>
+
+</html>

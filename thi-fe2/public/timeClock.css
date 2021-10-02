@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+
+#time-play{
+    display: none;
+}
+.container {
+  margin: auto;
+  width: 400px;
+  position: absolute;
+  z-index: 10000;
+  top: -50px;
+  left: 250px;
+}
+
+.path--background {
+  fill: rgb(34, 106, 213);
+  stroke: #fff;
+  stroke-width: 0px;
+}
+
+.pulse {
+  fill: rgb(255, 74, 74) !important;
+}
+
+.path--foreground {
+  fill: #eee;
+  stroke: #eee;
+  stroke-width: 2px;
+}
+
+.label {
+  font: 90px "Open Sans";
+  font-weight: 900;
+  text-anchor: middle;
+  fill: rgb(32, 15, 182);
+}
